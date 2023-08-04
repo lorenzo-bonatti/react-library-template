@@ -36,6 +36,8 @@
         "@storybook/react": "^7.2.1",
         "@storybook/react-vite": "^7.2.1",
         "@storybook/testing-library": "^0.2.0",
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^14.0.0",
         "@types/react": "^18.2.18",
         "@vitejs/plugin-react": "^4.0.4",
         "esbuild": "^0.18.17",

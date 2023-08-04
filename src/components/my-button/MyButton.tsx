@@ -4,5 +4,9 @@ interface MyButtonProps {
 }
 
 export default function MyButton(props: MyButtonProps) {
-    return <button onClick={props.onClick}>{props.text}</button>;
+    return (
+        <button data-testid="my-button" onClick={props.onClick}>
+            {props.text}
+        </button>
+    );
 }
