@@ -1,5 +1,5 @@
-import {build} from "esbuild";
-import {nodeExternalsPlugin} from "esbuild-node-externals";
+import { build } from "esbuild";
+import { nodeExternalsPlugin } from "esbuild-node-externals";
 
 build({
     entryPoints: ["src/index.ts"],

@@ -1,4 +1,4 @@
-import {defineConfig} from "vite";
+import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
@@ -18,6 +18,6 @@ export default defineConfig({
             },
             external: ["react/jsx-runtime"],
             plugins: [resolve(), typescript()],
-        }
-    }
+        },
+    },
 });
