@@ -14,7 +14,8 @@
   "private": false,
   "scripts": {
     "build:rollup": "rimraf dist && rollup -c",
-    "build:esbuild": "rimraf dist && node esbuild.js && tsc --emitDeclarationOnly"
+    "build:esbuild": "rimraf dist && node esbuild.js && tsc --emitDeclarationOnly",
+    "build:vite": "rimraf dist && vite build"
   },
   "peerDependencies": {
     "react": ">=18",
@@ -25,11 +26,13 @@
     "@rollup/plugin-terser": "^0.4.3",
     "@rollup/plugin-typescript": "^11.1.2",
     "@types/react": "^18.2.18",
+    "@vitejs/plugin-react": "^4.0.4",
     "esbuild": "^0.18.17",
     "esbuild-node-externals": "^1.8.0",
     "rimraf": "^5.0.1",
     "rollup": "^3.27.1",
     "tslib": "^2.6.1",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.6",
+    "vite": "^4.4.8"
   }
 }
