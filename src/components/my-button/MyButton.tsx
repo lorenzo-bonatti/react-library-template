@@ -1,9 +1,10 @@
 interface MyButtonProps {
     text: string;
+    onClick: () => void;
 }
 
 export default function MyButton(props: MyButtonProps) {
     return (
-        <button>{props.text}</button>
+        <button onClick={props.onClick}>{props.text}</button>
     )
 }
