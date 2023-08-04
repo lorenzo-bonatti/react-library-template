@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
@@ -6,6 +6,10 @@ import typescript from "@rollup/plugin-typescript";
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [react()],
+    test: {
+        globals: true,
+        environment: "jsdom",
+    },
     build: {
         lib: {
             entry: "./src/index.ts",
