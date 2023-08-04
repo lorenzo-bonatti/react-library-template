@@ -12,6 +12,8 @@
     "author": "YOUR_NAME",
     "license": "MIT",
     "scripts": {
+        "prepare": "husky install",
+        "test": "echo \"Error: no test specified\"",
         "build:rollup": "rimraf dist && rollup -c",
         "build:esbuild": "rimraf dist && node esbuild.js && tsc --emitDeclarationOnly",
         "build:vite": "rimraf dist && vite build",
@@ -38,6 +40,7 @@
         "@vitejs/plugin-react": "^4.0.4",
         "esbuild": "^0.18.17",
         "esbuild-node-externals": "^1.8.0",
+        "husky": "^8.0.3",
         "prettier": "^3.0.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
