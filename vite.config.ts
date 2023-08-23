@@ -2,6 +2,7 @@ import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
+import { name } from "./package.json";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,7 +14,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: "./src/index.ts",
-            name: "react-library-template",
+            name: name,
             formats: ["es"],
         },
         rollupOptions: {
