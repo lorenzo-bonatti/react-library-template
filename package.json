@@ -15,9 +15,7 @@
         "prepare": "husky install",
         "test": "vitest run",
         "test:watch": "vitest",
-        "build:rollup": "rimraf dist && rollup -c",
-        "build:esbuild": "rimraf dist && node esbuild.js && tsc --emitDeclarationOnly",
-        "build:vite": "rimraf dist && vite build",
+        "build": "rimraf dist && vite build",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build"
     },
