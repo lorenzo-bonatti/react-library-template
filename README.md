@@ -76,7 +76,7 @@ or you can run test watching changes
 
 ### No tests? :'(
 If your project not has already test, you need to comment the `npm run test` in `.husky > pre-commit` file.
-![Husky Pre Commit Script](https://photos.app.goo.gl/VKKrsAc6PVByvTyh7)
+![Husky Pre Commit Script](https://photos.app.goo.gl/UDRCRvzCKvPTUkYK7)
 
 That because without tests, the command returns **1** and this suspends the lint-staged script and your commit. You will not be able to commit your changes.
 
