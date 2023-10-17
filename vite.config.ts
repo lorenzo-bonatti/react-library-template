@@ -14,15 +14,19 @@ export default defineConfig({
     build: {
         lib: {
             entry: "./src/index.ts",
-            name: name,
-            formats: ["es"],
+            name: name, // From package.json
+            formats: ["es", "cjs"],
+            fileName: (format) => `index.${format}.js`,
         },
         rollupOptions: {
             output: {
                 sourcemap: true,
             },
-            external: ["react/jsx-runtime"],
+            external: ["react", "react-dom"],
             plugins: [resolve(), typescript()],
         },
+    },
+    resolve: {
+        dedupe: ["react", "react-dom"],
     },
 });
