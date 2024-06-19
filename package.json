@@ -1,43 +1,43 @@
 {
-  "name": "react-library-template",
-  "description": "A template for creating a React library with Vite.",
-  "version": "1.0.0",
-  "type": "module",
-  "module": "dist/react-library-template.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "README.md"
-  ],
-  "repository": "https://github.com/lorem-ipsum/react-library-template.git",
-  "author": "Lorem Ipsum <lorem.ipsum@gmail.com>",
-  "packageManager": "yarn@4.3.0",
-  "scripts": {
-    "build": "vite build",
-    "lint": "eslint --fix",
-    "lint:check": "eslint",
-    "prettier": "prettier --write .",
-    "prettier:check": "prettier --check ."
-  },
-  "peerDependencies": {
-    "react": ">=18",
-    "react-dom": ">=18"
-  },
-  "devDependencies": {
-    "@eslint/compat": "^1.1.0",
-    "@eslint/js": "^9.5.0",
-    "@types/react": "^18.3.3",
-    "@vitejs/plugin-react-swc": "^3.7.0",
-    "eslint": "9.x",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-react": "^7.34.3",
-    "globals": "^15.6.0",
-    "prettier": "^3.3.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.1",
-    "vite": "^5.3.1",
-    "vite-plugin-dts": "^3.9.1"
-  }
+    "name": "react-library-template",
+    "description": "A template for creating a React library with Vite.",
+    "version": "1.0.0",
+    "type": "module",
+    "module": "dist/react-library-template.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "repository": "https://github.com/lorem-ipsum/react-library-template.git",
+    "author": "Lorem Ipsum <lorem.ipsum@gmail.com>",
+    "packageManager": "yarn@4.3.0",
+    "scripts": {
+        "build": "vite build",
+        "lint": "eslint --fix",
+        "lint:check": "eslint",
+        "prettier": "prettier --write .",
+        "prettier:check": "prettier --check ."
+    },
+    "peerDependencies": {
+        "react": ">=18",
+        "react-dom": ">=18"
+    },
+    "devDependencies": {
+        "@eslint/compat": "^1.1.0",
+        "@eslint/js": "^9.5.0",
+        "@types/react": "^18.3.3",
+        "@vitejs/plugin-react-swc": "^3.7.0",
+        "eslint": "9.x",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-react": "^7.34.3",
+        "globals": "^15.6.0",
+        "prettier": "^3.3.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "typescript": "^5.4.5",
+        "typescript-eslint": "^7.13.1",
+        "vite": "^5.3.1",
+        "vite-plugin-dts": "^3.9.1"
+    }
 }
