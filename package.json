@@ -15,7 +15,9 @@
   "scripts": {
     "build": "vite build",
     "lint": "eslint --fix",
-    "lint:check": "eslint"
+    "lint:check": "eslint",
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --check ."
   },
   "peerDependencies": {
     "react": ">=18",
